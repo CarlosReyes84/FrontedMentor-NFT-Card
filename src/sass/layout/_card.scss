@@ -1,0 +1,128 @@
+@use './../components' as *;
+
+.card {
+    width: 300px;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: $card-bg;
+    .img {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: rgba($cyan, .5);
+            height: 0;
+            transition: height .5s ease;
+            overflow: hidden;
+            display: grid;
+            place-content: center;
+            .icon {
+                color: white;
+                font-size: 50px;
+            }
+        }
+        img {
+           border-radius: 1rem;
+        }
+        &:hover .overlay {
+            height: 100%;
+        }
+    }
+    h3 {
+        color: white;
+        font-size: 24px;
+        margin: 2rem 0rem;
+        &:hover {
+            color: $cyan;
+            cursor: pointer;
+        }
+    }
+    .main-text{
+        color: white;
+        opacity: .4;
+        font-size: 16px;
+    }
+    .two-svg {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $line;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        .svg {
+            padding-left: 2.5rem;
+            position: relative;
+            &::before {
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                left: 0;
+            }
+            p {
+                font-size: 14px;
+                opacity: .6;
+                font-weight: bold;
+            }
+        }
+        .svg1 {
+            p {
+                color: $cyan;
+            }
+            &::before {
+                background: url('/images/icon-ethereum.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .svg2 {
+            p {
+                color: white;
+            }
+            &::before {
+                background: url('/images/icon-clock.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        
+    }
+    footer {
+        margin-bottom: 2rem;
+        .footer-text {
+            display: inline;
+            margin-left: 5.5rem;
+            font-size: 15px;
+            color: gray;
+            position: relative;
+            &::before {
+                content: '';
+                width: 3.5rem;
+                height: 3.5rem;
+                border: 1px solid white;
+                position: absolute;
+                left: -60px;
+                top: -8px;
+                border-radius: 2rem;
+                background: url(/images/image-avatar.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        span {
+            color: white;
+            &:hover {
+                color: $cyan;
+                cursor: pointer;
+            }
+        }
+    }
+}
