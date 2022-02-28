@@ -105,7 +105,7 @@ img {
   color: #00fff7;
 }
 .card .two-svg .svg1::before {
-  background: url("./images/icon-ethereum.svg");
+  background: url("./../images/icon-ethereum.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ img {
   color: white;
 }
 .card .two-svg .svg2::before {
-  background: url("./images/icon-clock.svg");
+  background: url("./../images/icon-clock.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ img {
   left: -60px;
   top: -8px;
   border-radius: 2rem;
-  background: url("./images/image-avatar.png");
+  background: url("./../images/image-avatar.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
