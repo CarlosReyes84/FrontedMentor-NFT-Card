@@ -5,6 +5,9 @@
     padding: 2rem;
     border-radius: 1rem;
     background-color: $card-bg;
+    box-shadow: 6px 10px 9px 9px rgba(0,0,0,0.25);
+-webkit-box-shadow: 6px 10px 9px 9px rgba(0,0,0,0.25);
+-moz-box-shadow: 6px 10px 9px 9px rgba(0,0,0,0.25);
     .img {
         position: relative;
         border-radius: 1rem;
@@ -32,9 +35,9 @@
             height: 100%;
         }
     }
-    h3 {
+    h1 {
         color: white;
-        font-size: 24px;
+        font-size: 22px;
         margin: 2rem 0rem;
         &:hover {
             color: $cyan;
